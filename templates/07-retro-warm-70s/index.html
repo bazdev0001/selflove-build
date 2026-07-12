@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lumière Yoga — a boutique self-love studio with 70s soul. Slow flows, sun salutations and warm somatic practice to help you come home to yourself." />
+  <meta name="theme-color" content="#e8a33d" />
+  <title>Lumière Yoga — Come Home to Yourself</title>
+
+  <!-- Fonts: groovy retro display + warm humanist body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Film-grain + warm gradient overlays live here -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Lumière Yoga home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" role="img" aria-label="Rising sun logo">
+          <circle cx="32" cy="34" r="12" fill="currentColor" />
+          <g stroke="currentColor" stroke-width="3" stroke-linecap="round">
+            <line x1="32" y1="6" x2="32" y2="14" />
+            <line x1="32" y1="54" x2="32" y2="60" />
+            <line x1="10" y1="34" x2="4" y2="34" />
+            <line x1="60" y1="34" x2="54" y2="34" />
+            <line x1="15" y1="17" x2="10" y2="12" />
+            <line x1="54" y1="12" x2="49" y2="17" />
+            <line x1="15" y1="51" x2="10" y2="56" />
+            <line x1="54" y1="56" x2="49" y2="51" />
+          </g>
+        </svg>
+      </span>
+      <span class="brand-name">Lumière<span class="brand-sub">Yoga</span></span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#about">Studio</a>
+      <a href="#offerings">Offerings</a>
+      <a href="#teacher">Teacher</a>
+      <a href="#voices">Voices</a>
+      <a class="nav-cta" href="#newsletter">Join the flow</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Boutique self-love studio · est. 1974 revival</p>
+        <h1 id="hero-title">
+          Come home to <em>your&nbsp;own</em> warm light.
+        </h1>
+        <p class="hero-lede">
+          Slow, sun-soaked flows for people learning to be gentle with themselves.
+          No mirrors, no comparison — just breath, groove and a room the colour of
+          honey. This is yoga as an act of self-love.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn--solid" href="#offerings">See the classes</a>
+          <a class="btn btn--ghost" href="#newsletter">Free first flow →</a>
+        </div>
+
+        <ul class="hero-stats" aria-label="Studio at a glance">
+          <li><strong>2,400+</strong><span>hearts warmed</span></li>
+          <li><strong>12</strong><span>weekly flows</span></li>
+          <li><strong>50yrs</strong><span>of soul, reborn</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-media">
+        <figure class="hero-arch">
+          <img
+            src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?auto=format&fit=crop&w=900&q=80"
+            alt="A woman stretching gently in warm morning light beside a sunlit window"
+            loading="eager" width="900" height="1100" />
+        </figure>
+        <div class="hero-badge" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <defs>
+              <path id="badge-curve" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" />
+            </defs>
+            <text><textPath href="#badge-curve" startOffset="0">· breathe · soften · glow · return · </textPath></text>
+          </svg>
+          <span class="hero-badge-sun">☀</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Sun Salutations</span><span class="dot">✦</span>
+        <span>Restorative Nights</span><span class="dot">✦</span>
+        <span>Somatic Softening</span><span class="dot">✦</span>
+        <span>Golden-Hour Flow</span><span class="dot">✦</span>
+        <span>Self-Love Rituals</span><span class="dot">✦</span>
+        <span>Sun Salutations</span><span class="dot">✦</span>
+        <span>Restorative Nights</span><span class="dot">✦</span>
+        <span>Somatic Softening</span><span class="dot">✦</span>
+        <span>Golden-Hour Flow</span><span class="dot">✦</span>
+        <span>Self-Love Rituals</span><span class="dot">✦</span>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about-media">
+        <figure class="pill-frame">
+          <img
+            src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=800&q=80"
+            alt="Soft-lit yoga studio with plants and cushions in earthy tones"
+            loading="lazy" width="800" height="1000" />
+        </figure>
+        <figure class="circle-frame">
+          <img
+            src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80"
+            alt="Hands resting open in a gentle meditation pose"
+            loading="lazy" width="600" height="600" />
+        </figure>
+      </div>
+
+      <div class="about-copy">
+        <p class="eyebrow eyebrow--rust">The studio</p>
+        <h2 id="about-title">A warm room where you're allowed to be&nbsp;a beginner — forever.</h2>
+        <p>
+          Lumière began with a simple, slightly rebellious idea: that yoga could feel
+          less like a workout and more like a Sunday morning. We stripped out the
+          mirrors, dimmed the fluorescents, and filled the room with mustard cushions,
+          trailing plants and the kind of music your favourite aunt played in 1974.
+        </p>
+        <p>
+          Every class is an invitation to <em>soften</em> — to meet your body where it is,
+          not where an algorithm thinks it should be. Whether you can touch your toes is
+          none of our business. How kindly you speak to yourself on the mat? That's the
+          whole practice.
+        </p>
+
+        <ul class="value-list">
+          <li>
+            <span class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9.5-8.5C.8 9.6 2.4 6 6 6c2 0 3.2 1.2 4 2.5C10.8 7.2 12 6 14 6c3.6 0 5.2 3.6 3.5 6.5C19 16.65 12 21 12 21z" fill="currentColor"/></svg>
+            </span>
+            <div><strong>Body-neutral by design.</strong> No before-and-afters. No goals but presence.</div>
+          </li>
+          <li>
+            <span class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></g></svg>
+            </span>
+            <div><strong>Golden-hour lighting.</strong> Rooms lit like a 4pm daydream, all day long.</div>
+          </li>
+          <li>
+            <span class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3c3 3 4 6 4 9a4 4 0 0 1-8 0c0-3 1-6 4-9z" fill="currentColor"/><path d="M8 15c-1 2-1 4 0 6M16 15c1 2 1 4 0 6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+            </span>
+            <div><strong>Small groups, big warmth.</strong> Twelve mats, one teacher who knows your name.</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ OFFERINGS ============ -->
+    <section class="offerings" id="offerings" aria-labelledby="offer-title">
+      <header class="section-head">
+        <p class="eyebrow eyebrow--avocado">Ways to practise</p>
+        <h2 id="offer-title">Three doorways back to yourself.</h2>
+        <p class="section-sub">
+          Drop in, or settle in for a season. Every ticket includes herbal tea,
+          a warm towel and absolutely zero pressure to be anywhere but here.
+        </p>
+      </header>
+
+      <div class="offer-grid">
+        <article class="offer-card offer-card--mustard">
+          <div class="offer-top">
+            <span class="offer-tag">Most loved</span>
+            <span class="offer-arch" aria-hidden="true"></span>
+          </div>
+          <h3>Golden-Hour Flow</h3>
+          <p class="offer-desc">
+            A slow vinyasa the temperature of late-afternoon sun. Breath-led, playful,
+            and endlessly forgiving — the class we built the whole studio around.
+          </p>
+          <p class="offer-price"><span>£18</span> / drop-in</p>
+          <ul class="offer-meta">
+            <li>75 minutes · all levels</li>
+            <li>Weekday mornings &amp; sunsets</li>
+          </ul>
+          <a class="btn btn--solid btn--block" href="#newsletter">Book a mat</a>
+        </article>
+
+        <article class="offer-card offer-card--rust offer-card--feature">
+          <div class="offer-top">
+            <span class="offer-tag offer-tag--light">Season pass</span>
+            <span class="offer-arch" aria-hidden="true"></span>
+          </div>
+          <h3>The Self-Love Series</h3>
+          <p class="offer-desc">
+            Six weeks of somatic yoga, journalling and guided rest — a gentle
+            re-parenting of the way you treat yourself. Small cohort, big shift.
+          </p>
+          <p class="offer-price"><span>£145</span> / 6 weeks</p>
+          <ul class="offer-meta">
+            <li>Weekly 90-min gatherings</li>
+            <li>Workbook + tea ritual included</li>
+          </ul>
+          <a class="btn btn--cream btn--block" href="#newsletter">Join the next round</a>
+        </article>
+
+        <article class="offer-card offer-card--avocado">
+          <div class="offer-top">
+            <span class="offer-tag">Wind down</span>
+            <span class="offer-arch" aria-hidden="true"></span>
+          </div>
+          <h3>Restorative Nights</h3>
+          <p class="offer-desc">
+            Bolsters, blankets, candlelight and a long yoga nidra to close. Come in your
+            softest clothes and leave feeling like you've had a small, delicious holiday.
+          </p>
+          <p class="offer-price"><span>£20</span> / drop-in</p>
+          <ul class="offer-meta">
+            <li>60 minutes · every body welcome</li>
+            <li>Thursday &amp; Sunday evenings</li>
+          </ul>
+          <a class="btn btn--solid btn--block" href="#newsletter">Reserve a bolster</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ TEACHER ============ -->
+    <section class="teacher" id="teacher" aria-labelledby="teacher-title">
+      <figure class="teacher-photo">
+        <img
+          src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=800&q=80"
+          alt="Yoga teacher Marisol seated calmly on a mat, smiling softly"
+          loading="lazy" width="800" height="900" />
+        <figcaption class="teacher-sticker">200hr RYT · Somatics · Yin</figcaption>
+      </figure>
+
+      <div class="teacher-copy">
+        <p class="eyebrow eyebrow--rust">Your guide</p>
+        <h2 id="teacher-title">Marisol Vega</h2>
+        <p class="teacher-role">Founder &amp; lead teacher</p>
+        <p>
+          Marisol trained across Oaxaca, Lisbon and a very leaky studio in Bristol before
+          deciding the world had enough intense yoga and not nearly enough <em>kind</em> yoga.
+          Fifteen years in, she teaches the way she wishes someone had taught her at twenty-two:
+          slowly, warmly, and with a lot of permission to rest.
+        </p>
+        <blockquote class="teacher-quote">
+          "Self-love isn't a bubble bath. It's the way you breathe when a pose gets hard —
+          and choosing softness anyway."
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="voices" id="voices" aria-labelledby="voices-title">
+      <header class="section-head">
+        <p class="eyebrow eyebrow--avocado">Voices from the mat</p>
+        <h2 id="voices-title">People who came for the stretch — and stayed for the&nbsp;warmth.</h2>
+      </header>
+
+      <div class="voice-grid">
+        <figure class="voice-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>
+            "I've quietly hated my body for a decade. Three months at Lumière and I caught
+            myself thanking my legs after class. I actually cried in the car."
+          </blockquote>
+          <figcaption><strong>Priya N.</strong><span>Golden-Hour regular</span></figcaption>
+        </figure>
+
+        <figure class="voice-card voice-card--offset">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>
+            "The Self-Love Series undid knots I didn't know I was holding. It's less a yoga
+            course and more a warm room full of people learning to like themselves."
+          </blockquote>
+          <figcaption><strong>Daniel O.</strong><span>Series graduate</span></figcaption>
+        </figure>
+
+        <figure class="voice-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>
+            "Restorative Nights is my whole personality now. I arrive frazzled and leave
+            feeling like honey. Marisol's voice should be bottled."
+          </blockquote>
+          <figcaption><strong>Esme R.</strong><span>Thursday nidra devotee</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ NEWSLETTER CTA ============ -->
+    <section class="newsletter" id="newsletter" aria-labelledby="news-title">
+      <div class="newsletter-inner">
+        <span class="news-sun" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="24" fill="currentColor"/>
+            <g stroke="currentColor" stroke-width="5" stroke-linecap="round">
+              <line x1="60" y1="8" x2="60" y2="22"/><line x1="60" y1="98" x2="60" y2="112"/>
+              <line x1="8" y1="60" x2="22" y2="60"/><line x1="98" y1="60" x2="112" y2="60"/>
+              <line x1="23" y1="23" x2="33" y2="33"/><line x1="87" y1="87" x2="97" y2="97"/>
+              <line x1="97" y1="23" x2="87" y2="33"/><line x1="33" y1="87" x2="23" y2="97"/>
+            </g>
+          </svg>
+        </span>
+        <p class="eyebrow eyebrow--cream">Your first flow is on us</p>
+        <h2 id="news-title">Join the Sunday letter &amp; get a free class.</h2>
+        <p class="news-lede">
+          One warm note a week — a pose to try, a kindness to practise, and first dibs on
+          new series. No spam, no hustle, just a little light in your inbox.
+        </p>
+
+        <form class="news-form" action="#" method="post" novalidate>
+          <label class="visually-hidden" for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@sunshine.com" autocomplete="email" required />
+          <button type="submit" class="btn btn--solid">Send my free flow ☀</button>
+        </form>
+        <p class="news-fine">Unsubscribe anytime. We'll only ever love you gently.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="Lumière Yoga home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img" aria-label="Rising sun logo">
+              <circle cx="32" cy="34" r="12" fill="currentColor" />
+              <g stroke="currentColor" stroke-width="3" stroke-linecap="round">
+                <line x1="32" y1="6" x2="32" y2="14"/><line x1="32" y1="54" x2="32" y2="60"/>
+                <line x1="10" y1="34" x2="4" y2="34"/><line x1="60" y1="34" x2="54" y2="34"/>
+                <line x1="15" y1="17" x2="10" y2="12"/><line x1="54" y1="12" x2="49" y2="17"/>
+                <line x1="15" y1="51" x2="10" y2="56"/><line x1="54" y1="56" x2="49" y2="51"/>
+              </g>
+            </svg>
+          </span>
+          <span class="brand-name">Lumière<span class="brand-sub">Yoga</span></span>
+        </a>
+        <p class="footer-tag">Come home to your own warm light.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Explore">
+        <h3>Wander</h3>
+        <a href="#about">The studio</a>
+        <a href="#offerings">Offerings</a>
+        <a href="#teacher">Marisol</a>
+        <a href="#voices">Voices</a>
+      </nav>
+
+      <div class="footer-col">
+        <h3>Find us</h3>
+        <p>14 Marigold Lane<br/>Bristol, BS1 · UK</p>
+        <p><a href="mailto:hello@lumiere.yoga">hello@lumiere.yoga</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Follow the sun</h3>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Spotify playlists">Spotify</a>
+          <a href="#" aria-label="Newsletter">Substack</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>© 1974 · 2026 Lumière Yoga. Made with warmth in Bristol.</p>
+      <p>Every body. Every day. Every ray.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

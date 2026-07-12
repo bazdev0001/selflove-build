@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lumière Yoga — Now Playing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<main class="stage">
+  <div class="phone player">
+    <div class="bezel-glare"></div>
+    <div class="screen">
+      <!-- ambient background -->
+      <div class="ambient">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+      </div>
+
+      <div class="statusbar light">
+        <span class="clock">9:41</span>
+        <div class="dynamic-island"></div>
+        <div class="sysicons">
+          <svg viewBox="0 0 18 12" width="18" height="12" aria-hidden="true"><rect x="0" y="7" width="3" height="5" rx="1"/><rect x="5" y="4.5" width="3" height="7.5" rx="1"/><rect x="10" y="2" width="3" height="10" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1" opacity=".4"/></svg>
+          <svg viewBox="0 0 16 12" width="16" height="12" aria-hidden="true"><path d="M8 2.6c2 0 3.9.8 5.3 2.1l1.2-1.3A9.2 9.2 0 0 0 8 .8 9.2 9.2 0 0 0 1.5 3.4l1.2 1.3A7.4 7.4 0 0 1 8 2.6Zm0 3.4c1 0 2 .4 2.8 1.1l1.2-1.3A6 6 0 0 0 8 4a6 6 0 0 0-4 1.8l1.2 1.3A4.1 4.1 0 0 1 8 6Zm0 3.3L9.8 8A2.6 2.6 0 0 0 8 7.3 2.6 2.6 0 0 0 6.2 8L8 9.3Z"/></svg>
+          <span class="battery"><span class="battery-fill"></span></span>
+        </div>
+      </div>
+
+      <!-- top bar -->
+      <div class="player-top">
+        <button class="icon-btn" aria-label="Back">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <span class="playing-from">Meditation · Evening Calm</span>
+        <button class="icon-btn" aria-label="More">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="6" cy="12" r="1.7"/><circle cx="12" cy="12" r="1.7"/><circle cx="18" cy="12" r="1.7"/></svg>
+        </button>
+      </div>
+
+      <!-- album art -->
+      <div class="art-wrap">
+        <div class="art-ring"></div>
+        <div class="art-card">
+          <svg viewBox="0 0 300 300" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" aria-label="Meditation cover art">
+            <defs>
+              <linearGradient id="ac" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#8E6E8E"/><stop offset="50%" stop-color="#B4788A"/><stop offset="100%" stop-color="#E4A98C"/>
+              </linearGradient>
+              <radialGradient id="am" cx="50%" cy="40%" r="55%">
+                <stop offset="0%" stop-color="#F6D9A8" stop-opacity=".9"/><stop offset="100%" stop-color="#F6D9A8" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <rect width="300" height="300" fill="url(#ac)"/>
+            <circle cx="150" cy="118" r="96" fill="url(#am)"/>
+            <g fill="none" stroke="#FBECD3" stroke-width="1.4" opacity=".5">
+              <circle cx="150" cy="150" r="60"/><circle cx="150" cy="150" r="88"/><circle cx="150" cy="150" r="116"/>
+            </g>
+            <path d="M0 232c60-34 110-34 150-8s95 28 150-8v84H0Z" fill="#6D4B5C" opacity=".55"/>
+            <path d="M0 258c66-26 108-14 152 6s112 12 148-14v50H0Z" fill="#573B49" opacity=".7"/>
+            <g transform="translate(150 214)">
+              <path d="M-30 26c4-16 15-24 30-24s26 8 30 24Z" fill="#2E2033"/>
+              <circle cx="0" cy="-2" r="11" fill="#F6D9A8"/>
+              <path d="M-24 22c-1-9 4-15 10-16 3 6 11 6 14 6s11 0 14-6c6 1 11 7 10 16Z" fill="#3C2A44"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <!-- session info -->
+      <div class="track-info">
+        <div class="ti-text">
+          <h1>Letting Go of the Day</h1>
+          <p>Maya Lindqvist · Yoga Nidra</p>
+        </div>
+        <button class="heart" aria-label="Favourite">
+          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 20s-7-4.35-7-9.5A3.5 3.5 0 0 1 12 8a3.5 3.5 0 0 1 7 2.5C19 15.65 12 20 12 20Z"/></svg>
+        </button>
+      </div>
+
+      <!-- waveform / progress -->
+      <div class="wave-wrap">
+        <div class="waveform" aria-hidden="true">
+          <!-- bars generated visually; ~48 bars -->
+          <span style="--h:32%"></span><span style="--h:54%"></span><span style="--h:40%"></span><span style="--h:70%"></span><span style="--h:48%"></span><span style="--h:88%"></span><span style="--h:60%"></span><span style="--h:44%"></span><span style="--h:76%"></span><span style="--h:52%"></span><span style="--h:34%"></span><span style="--h:64%"></span><span style="--h:92%"></span><span style="--h:58%"></span><span style="--h:40%"></span><span style="--h:72%"></span><span style="--h:50%"></span><span style="--h:30%"></span><span style="--h:66%"></span><span style="--h:84%"></span>
+          <span style="--h:46%"></span><span style="--h:60%"></span><span style="--h:38%"></span><span style="--h:78%"></span><span style="--h:54%"></span><span style="--h:42%"></span><span style="--h:68%"></span><span style="--h:90%"></span><span style="--h:50%"></span><span style="--h:36%"></span><span style="--h:62%"></span><span style="--h:74%"></span><span style="--h:44%"></span><span style="--h:56%"></span><span style="--h:82%"></span><span style="--h:48%"></span><span style="--h:34%"></span><span style="--h:70%"></span><span style="--h:58%"></span><span style="--h:40%"></span>
+          <span style="--h:64%"></span><span style="--h:50%"></span><span style="--h:76%"></span><span style="--h:42%"></span><span style="--h:60%"></span><span style="--h:36%"></span><span style="--h:54%"></span><span style="--h:46%"></span>
+          <span class="wave-head"></span>
+        </div>
+        <div class="times"><span>08:12</span><span>21:00</span></div>
+      </div>
+
+      <!-- controls -->
+      <div class="controls">
+        <button class="ctrl-sm" aria-label="Shuffle">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 7h4l9 10h3M4 17h4l3-3.4M15 7h5m0 0-2.4-2.4M20 7l-2.4 2.4M20 17l-2.4 2.4M20 17l-2.4-2.4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="ctrl-md" aria-label="Rewind 15s">
+          <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M11 6V2L5 7l6 5V8a6 6 0 1 1-6 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><text x="13.5" y="17" font-size="6.5" font-family="Manrope,sans-serif" font-weight="800" fill="currentColor" text-anchor="middle">15</text></svg>
+        </button>
+        <button class="play-btn" aria-label="Pause">
+          <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><rect x="7" y="5" width="4" height="14" rx="1.6" fill="#fff"/><rect x="14" y="5" width="4" height="14" rx="1.6" fill="#fff"/></svg>
+        </button>
+        <button class="ctrl-md" aria-label="Forward 15s">
+          <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M13 6V2l6 5-6 5V8a6 6 0 1 0 6 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><text x="10.5" y="17" font-size="6.5" font-family="Manrope,sans-serif" font-weight="800" fill="currentColor" text-anchor="middle">15</text></svg>
+        </button>
+        <button class="ctrl-sm" aria-label="Timer">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="13" r="8" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M12 13V9M9 3h6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+
+      <!-- ambience toggle -->
+      <div class="ambience-bar">
+        <div class="amb-left">
+          <span class="amb-ico">
+            <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M5 15c-1-6 3-10 7-10 1 3 4 3 6 2 1 4-2 8-6 8-1 0-3-.2-4 .5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 20c3-3 6-4 10-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+          <div><p class="amb-title">Ambience</p><p class="amb-sub">Gentle Rainfall · 60%</p></div>
+        </div>
+        <label class="switch"><input type="checkbox" checked /><span class="slider"></span></label>
+      </div>
+
+      <div class="home-indicator light-ind"></div>
+    </div>
+  </div>
+</main>
+</body>
+</html>

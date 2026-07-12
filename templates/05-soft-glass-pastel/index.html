@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lumière Yoga — a serene self-love practice of breath, movement and stillness. Online and in-studio classes, immersions and mentorship designed to help you come home to yourself." />
+  <title>Lumière Yoga — Come Home to Yourself</title>
+
+  <!-- Google Fonts: Fraunces (display) + Plus Jakarta Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============ ANIMATED MESH GRADIENT BACKDROP ============ -->
+  <div class="mesh-bg" aria-hidden="true">
+    <span class="orb orb--blush"></span>
+    <span class="orb orb--lilac"></span>
+    <span class="orb orb--sky"></span>
+    <span class="orb orb--peach"></span>
+  </div>
+
+  <!-- Decorative floating blobs (inline SVG) -->
+  <svg class="deco-blob deco-blob--1" viewBox="0 0 200 200" aria-hidden="true">
+    <path fill="url(#g1)" d="M42.7,-62.9C55.9,-54.3,67.5,-42.9,72.9,-29C78.3,-15.1,77.5,1.3,72.4,15.9C67.3,30.5,57.9,43.3,45.6,53.9C33.3,64.5,18.1,72.9,1.2,71.3C-15.7,69.7,-31.4,58.1,-45.6,45.9C-59.8,33.7,-72.5,20.9,-75.5,5.9C-78.5,-9.1,-71.8,-26.3,-60.6,-38.2C-49.4,-50.1,-33.7,-56.7,-18.9,-63.7C-4.1,-70.7,9.8,-78.1,23.6,-76.2C37.4,-74.3,51.1,-63.1,42.7,-62.9Z" transform="translate(100 100)" />
+    <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd6e8"/><stop offset="1" stop-color="#c9b6ff"/></linearGradient></defs>
+  </svg>
+  <svg class="deco-blob deco-blob--2" viewBox="0 0 200 200" aria-hidden="true">
+    <path fill="url(#g2)" d="M39.5,-64.6C50.9,-57.4,59.4,-45.9,65.8,-33.1C72.2,-20.3,76.5,-6.2,74.9,7.3C73.3,20.8,65.8,33.7,55.9,44.5C46,55.3,33.7,64,19.7,68.9C5.7,73.8,-10,74.9,-24.6,70.6C-39.2,66.3,-52.7,56.6,-61.8,43.9C-70.9,31.2,-75.6,15.6,-75.2,0.2C-74.8,-15.2,-69.3,-30.4,-59.6,-41.8C-49.9,-53.2,-36,-60.8,-22.3,-66.8C-8.6,-72.8,4.9,-77.2,18,-74.7C31.1,-72.2,43.8,-62.9,39.5,-64.6Z" transform="translate(100 100)" />
+    <defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#bfe3ff"/><stop offset="1" stop-color="#ffd9c0"/></linearGradient></defs>
+  </svg>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <nav class="nav glass" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Lumière Yoga home">
+        <svg class="brand__mark" viewBox="0 0 48 48" width="34" height="34" aria-hidden="true">
+          <defs><linearGradient id="lm" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff9ec7"/><stop offset="1" stop-color="#9b8cff"/></linearGradient></defs>
+          <circle cx="24" cy="24" r="22" fill="none" stroke="url(#lm)" stroke-width="2" opacity="0.55"/>
+          <path d="M24 9c4 6 4 11 0 15-4-4-4-9 0-15Z" fill="url(#lm)"/>
+          <path d="M24 39c-4-6-4-11 0-15 4 4 4 9 0 15Z" fill="url(#lm)" opacity="0.85"/>
+          <path d="M9 24c6-4 11-4 15 0-4 4-9 4-15 0Z" fill="url(#lm)" opacity="0.7"/>
+          <path d="M39 24c-6 4-11 4-15 0 4-4 9-4 15 0Z" fill="url(#lm)" opacity="0.7"/>
+          <circle cx="24" cy="24" r="3" fill="#fff"/>
+        </svg>
+        <span class="brand__name">Lumière <em>Yoga</em></span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#about">Philosophy</a></li>
+        <li><a href="#offerings">Offerings</a></li>
+        <li><a href="#teacher">Teacher</a></li>
+        <li><a href="#love">Love Notes</a></li>
+      </ul>
+      <a class="btn btn--soft nav__cta" href="#newsletter">Begin</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__inner">
+        <div class="hero__copy reveal">
+          <span class="eyebrow">Self-love, in motion</span>
+          <h1 id="hero-title" class="hero__title">Come home<br />to <em>yourself.</em></h1>
+          <p class="hero__lede">Lumière is a softly-lit practice of breath, movement and stillness — designed to dissolve the noise and return you to the quiet, radiant person you already are.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#offerings">Explore the practice</a>
+            <a class="btn btn--ghost" href="#about"><span class="play-dot" aria-hidden="true"></span> Our philosophy</a>
+          </div>
+          <dl class="hero__stats">
+            <div><dt>12k+</dt><dd>souls guided</dd></div>
+            <div><dt>4.9★</dt><dd>average rating</dd></div>
+            <div><dt>7 yrs</dt><dd>holding space</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero__media reveal">
+          <figure class="glass hero__card float-slow">
+            <img
+              src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=900&q=80"
+              alt="A woman in soft light holding a calm seated yoga pose by a bright window"
+              loading="eager" width="900" height="1100" />
+            <figcaption class="hero__card-tag glass">
+              <span class="pulse" aria-hidden="true"></span> Breathing in progress
+            </figcaption>
+          </figure>
+          <div class="glass hero__chip float-fast">
+            <strong>Morning Glow</strong>
+            <span>Live · 07:00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee glass" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Breathe</span><span>·</span><span>Soften</span><span>·</span><span>Belong</span><span>·</span><span>Restore</span><span>·</span><span>Bloom</span><span>·</span>
+        <span>Breathe</span><span>·</span><span>Soften</span><span>·</span><span>Belong</span><span>·</span><span>Restore</span><span>·</span><span>Bloom</span><span>·</span>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT / PHILOSOPHY ============ -->
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div class="about__grid">
+        <div class="about__media reveal">
+          <img class="glass about__img"
+            src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80"
+            alt="Two people practising restorative yoga on soft mats in a warm, airy studio"
+            loading="lazy" width="800" height="900" />
+          <div class="glass about__quote float-slow">
+            <p>“You do not have to earn your own tenderness.”</p>
+          </div>
+        </div>
+        <div class="about__copy reveal">
+          <span class="eyebrow">The philosophy</span>
+          <h2 id="about-title" class="section__title">Yoga as an act of gentleness, not achievement.</h2>
+          <p>We built Lumière for the perfectionists, the over-givers and the quietly exhausted. Here, the mat is not another place to strive — it is a place to arrive. Every sequence is an invitation to meet yourself with the same warmth you offer everyone else.</p>
+          <ul class="feature-list">
+            <li class="glass feature">
+              <span class="feature__icon" aria-hidden="true">✿</span>
+              <div><h3>Nervous-system first</h3><p>Slow, breath-led movement that signals safety to your body.</p></div>
+            </li>
+            <li class="glass feature">
+              <span class="feature__icon" aria-hidden="true">☾</span>
+              <div><h3>Body-neutral cueing</h3><p>Language that honours every shape, every day, every mood.</p></div>
+            </li>
+            <li class="glass feature">
+              <span class="feature__icon" aria-hidden="true">✷</span>
+              <div><h3>A real community</h3><p>Small circles where you are known by name, not a number.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OFFERINGS ============ -->
+    <section id="offerings" class="section offerings" aria-labelledby="offerings-title">
+      <header class="section__head reveal">
+        <span class="eyebrow">Ways to practise</span>
+        <h2 id="offerings-title" class="section__title">Choose your softest next step.</h2>
+        <p class="section__sub">Three paths, one intention — a kinder relationship with yourself. Cancel anytime; keep the calm forever.</p>
+      </header>
+
+      <div class="cards">
+        <article class="glass card reveal">
+          <div class="card__badge">Most loved</div>
+          <img class="card__img"
+            src="https://images.unsplash.com/photo-1592432678016-e910b452f9a2?auto=format&fit=crop&w=700&q=80"
+            alt="Person rolling out a yoga mat at home in gentle morning light"
+            loading="lazy" width="700" height="480" />
+          <h3 class="card__title">The Daily Glow</h3>
+          <p class="card__desc">Unlimited on-demand classes plus four live sessions a week. Your evergreen home for morning breath-work and evening wind-downs.</p>
+          <p class="card__price"><span>£29</span>/month</p>
+          <a class="btn btn--primary card__btn" href="#newsletter">Start free 7 days</a>
+        </article>
+
+        <article class="glass card card--feature reveal">
+          <div class="card__badge card__badge--gold">Signature</div>
+          <img class="card__img"
+            src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&w=700&q=80"
+            alt="Small group of women in a bright studio flowing through a gentle yoga posture"
+            loading="lazy" width="700" height="480" />
+          <h3 class="card__title">Bloom Immersion</h3>
+          <p class="card__desc">A six-week live journey through self-compassion, restorative flow and guided journaling — in an intimate circle of no more than twelve.</p>
+          <p class="card__price"><span>£240</span>/course</p>
+          <a class="btn btn--primary card__btn" href="#newsletter">Reserve a place</a>
+        </article>
+
+        <article class="glass card reveal">
+          <div class="card__badge">1:1</div>
+          <img class="card__img"
+            src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?auto=format&fit=crop&w=700&q=80"
+            alt="Yoga teacher gently guiding a student in a calm private session"
+            loading="lazy" width="700" height="480" />
+          <h3 class="card__title">Private Mentorship</h3>
+          <p class="card__desc">Four bespoke sessions built around your body, your history and your goals — with voice-note support between calls whenever you need it.</p>
+          <p class="card__price"><span>£420</span>/month</p>
+          <a class="btn btn--primary card__btn" href="#newsletter">Enquire now</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ TEACHER BIO ============ -->
+    <section id="teacher" class="section teacher" aria-labelledby="teacher-title">
+      <div class="glass teacher__panel reveal">
+        <div class="teacher__media">
+          <img class="teacher__img"
+            src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=700&q=80"
+            alt="Portrait of Elodie Rousseau, founder of Lumière Yoga, smiling softly"
+            loading="lazy" width="700" height="800" />
+          <span class="teacher__ring" aria-hidden="true"></span>
+        </div>
+        <div class="teacher__copy">
+          <span class="eyebrow">Your teacher</span>
+          <h2 id="teacher-title" class="section__title">Elodie Rousseau</h2>
+          <p class="teacher__role">Founder · 500hr RYT · Trauma-informed facilitator</p>
+          <p>After a decade of chasing the "perfect" practice, Elodie burned out — and found her way back through the slow, unglamorous work of self-kindness. Lumière is everything she wished someone had offered her then: a place to be soft on purpose.</p>
+          <p>She has guided over twelve thousand students across forty countries, trained at the Himalayan Institute, and believes that rest is a radical, beautiful act.</p>
+          <ul class="teacher__creds">
+            <li class="glass">🌿 Yoga Alliance E-RYT 500</li>
+            <li class="glass">🧠 Somatic &amp; breath specialist</li>
+            <li class="glass">📖 Author, <em>Soft Power</em></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section id="love" class="section love" aria-labelledby="love-title">
+      <header class="section__head reveal">
+        <span class="eyebrow">Love notes</span>
+        <h2 id="love-title" class="section__title">Words from the circle.</h2>
+      </header>
+      <div class="love__grid">
+        <figure class="glass quote reveal">
+          <div class="quote__stars" aria-label="Five out of five stars">★★★★★</div>
+          <blockquote>“I arrived burnt out and apologetic for taking up space. Six weeks later I actually like resting. Lumière rewired how I talk to myself.”</blockquote>
+          <figcaption>
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80" alt="Portrait of Maya" loading="lazy" width="48" height="48" />
+            <span><strong>Maya T.</strong> Bloom Immersion</span>
+          </figcaption>
+        </figure>
+        <figure class="glass quote reveal">
+          <div class="quote__stars" aria-label="Five out of five stars">★★★★★</div>
+          <blockquote>“The only membership I've never cancelled. Ten minutes each morning and my whole nervous system exhales. Genuinely life-changing, and I don't say that lightly.”</blockquote>
+          <figcaption>
+            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=100&q=80" alt="Portrait of Jordan" loading="lazy" width="48" height="48" />
+            <span><strong>Jordan P.</strong> The Daily Glow</span>
+          </figcaption>
+        </figure>
+        <figure class="glass quote reveal">
+          <div class="quote__stars" aria-label="Five out of five stars">★★★★★</div>
+          <blockquote>“Elodie holds space like no one else. I finally understand that gentleness isn't weakness — it's the strongest thing I've ever practised.”</blockquote>
+          <figcaption>
+            <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?auto=format&fit=crop&w=100&q=80" alt="Portrait of Priya" loading="lazy" width="48" height="48" />
+            <span><strong>Priya S.</strong> Private Mentorship</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ NEWSLETTER CTA ============ -->
+    <section id="newsletter" class="section newsletter" aria-labelledby="news-title">
+      <div class="glass newsletter__panel reveal">
+        <svg class="newsletter__blob" viewBox="0 0 200 200" aria-hidden="true">
+          <path fill="url(#g3)" d="M45,-70C57,-62,64,-45,69,-29C74,-13,77,3,72,16C67,29,54,40,41,50C28,60,14,69,-2,72C-18,75,-36,72,-49,62C-62,52,-70,35,-73,18C-76,1,-74,-17,-66,-31C-58,-45,-44,-55,-30,-62C-16,-69,-2,-73,12,-74C26,-75,33,-78,45,-70Z" transform="translate(100 100)"/>
+          <defs><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffc9e0"/><stop offset="1" stop-color="#b5a4ff"/></linearGradient></defs>
+        </svg>
+        <div class="newsletter__content">
+          <span class="eyebrow">The Sunday Soften</span>
+          <h2 id="news-title" class="section__title">A weekly letter for your softest self.</h2>
+          <p>One short, unhurried note each Sunday — a breath practice, a reflection and a gentle prompt. No noise, no selling. Just a little light in your inbox. Join 12,000 readers.</p>
+          <form class="newsletter__form" action="#" method="post" novalidate>
+            <label class="sr-only" for="email">Email address</label>
+            <input class="glass" id="email" name="email" type="email" placeholder="you@lovely.com" autocomplete="email" required />
+            <button class="btn btn--primary" type="submit">Send me light</button>
+          </form>
+          <p class="newsletter__fine">Unsubscribe in one tap. We'll never share your details. Made with care in Lisbon.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="footer__inner glass">
+      <div class="footer__brand">
+        <a class="brand" href="#top" aria-label="Lumière Yoga home">
+          <svg class="brand__mark" viewBox="0 0 48 48" width="30" height="30" aria-hidden="true">
+            <circle cx="24" cy="24" r="22" fill="none" stroke="url(#lm)" stroke-width="2" opacity="0.55"/>
+            <path d="M24 9c4 6 4 11 0 15-4-4-4-9 0-15Z" fill="url(#lm)"/>
+            <path d="M24 39c-4-6-4-11 0-15 4 4 4 9 0 15Z" fill="url(#lm)" opacity="0.85"/>
+            <circle cx="24" cy="24" r="3" fill="#fff"/>
+          </svg>
+          <span class="brand__name">Lumière <em>Yoga</em></span>
+        </a>
+        <p>Come home to yourself — one soft breath at a time.</p>
+      </div>
+      <nav class="footer__cols" aria-label="Footer">
+        <div>
+          <h4>Practise</h4>
+          <a href="#offerings">The Daily Glow</a>
+          <a href="#offerings">Bloom Immersion</a>
+          <a href="#teacher">Private Mentorship</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#about">Philosophy</a>
+          <a href="#love">Love notes</a>
+          <a href="#newsletter">Newsletter</a>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Spotify</a>
+          <a href="#">hello@lumiere.yoga</a>
+        </div>
+      </nav>
+    </div>
+    <p class="footer__legal">© 2026 Lumière Yoga. Handcrafted with tenderness. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

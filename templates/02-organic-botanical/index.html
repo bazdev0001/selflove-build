@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lumière Yoga — a nature-led self-love yoga studio. Slow, restorative practice, botanical rituals, and small-group classes to help you come home to yourself." />
+  <title>Lumière Yoga — Come Home to Yourself</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== SVG SPRITE: reusable botanical motifs ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="leaf" viewBox="0 0 24 24">
+        <path d="M12 2C7 6 4 10 4 15a8 8 0 0 0 16 0c0-5-3-9-8-13Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+        <path d="M12 6v13M12 10l3.5-2.5M12 13l-3.5-2.5M12 16l3.5-2.5" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="sprig" viewBox="0 0 24 24">
+        <path d="M12 22V4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+        <path d="M12 9c-2-1-4-1-5-3M12 9c2-1 4-1 5-3M12 14c-2-1-4-1-5-3M12 14c2-1 4-1 5-3M12 6c-1-1-2-2-2-4M12 6c1-1 2-2 2-4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" fill="none"/>
+      </symbol>
+      <symbol id="sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Lumière Yoga home">
+      <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="23" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".5"/>
+        <path d="M24 40c-6-6-9-11-9-16 0-5 3-10 9-14 6 4 9 9 9 14 0 5-3 10-9 16Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+        <path d="M24 14v22M24 22l5-3.5M24 27l-5-3.5M24 32l5-3.5" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+      </svg>
+      <span class="brand__word">Lumière<em>Yoga</em></span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#philosophy">Philosophy</a>
+      <a href="#offerings">Offerings</a>
+      <a href="#teacher">Teacher</a>
+      <a href="#voices">Voices</a>
+      <a class="nav-cta" href="#newsletter">Begin</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__blob" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <div class="hero__copy reveal">
+          <span class="eyebrow"><svg class="ico"><use href="#sprig"/></svg> Restorative &amp; self-love yoga</span>
+          <h1 id="hero-title">Come home<br />to yourself.</h1>
+          <p class="lede">Lumière is a slow, nature-led studio for people who are tired of pushing. Here we practice softness — breath, botanicals, and unhurried movement that lets you feel held instead of measured.</p>
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="#offerings">Explore practices</a>
+            <a class="btn btn--ghost" href="#philosophy">Our philosophy</a>
+          </div>
+          <ul class="hero__stats">
+            <li><strong>8</strong><span>students per class</span></li>
+            <li><strong>12yr</strong><span>of teaching</span></li>
+            <li><strong>4.9</strong><span>student rating</span></li>
+          </ul>
+        </div>
+
+        <figure class="hero__media reveal">
+          <img
+            src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=900&q=80"
+            alt="A woman sitting cross-legged in a calm sunlit yoga pose with eyes closed"
+            width="900" height="1100" loading="eager" />
+          <div class="hero__badge">
+            <svg class="ico"><use href="#sun"/></svg>
+            <span>Daylight &amp; candlelit sessions</span>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- organic divider -->
+    <svg class="divider divider--cream" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,64 C240,120 480,20 720,44 C960,68 1200,116 1440,60 L1440,120 L0,120 Z"/>
+    </svg>
+
+    <!-- ===== PHILOSOPHY ===== -->
+    <section class="philosophy" id="philosophy" aria-labelledby="phil-title">
+      <div class="philosophy__grid">
+        <figure class="philosophy__media reveal">
+          <img
+            src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80"
+            alt="Green botanical leaves catching soft morning light"
+            width="800" height="900" loading="lazy" />
+          <span class="philosophy__leaf" aria-hidden="true"><svg class="ico"><use href="#leaf"/></svg></span>
+        </figure>
+
+        <div class="philosophy__copy reveal">
+          <span class="eyebrow"><svg class="ico"><use href="#leaf"/></svg> The philosophy</span>
+          <h2 id="phil-title">Self-love isn't a reward you earn. It's the ground you stand on.</h2>
+          <p>We built Lumière on a quiet idea: that you don't need to be fixed. Our practice isn't about burning calories or nailing a shape — it's about listening inward until the noise settles and something kinder answers back.</p>
+          <p>Every session is rooted in the seasons. We move with the light, brew our own herbal blends, and keep classes small enough that you're a person, never a number on a mat.</p>
+
+          <ul class="pillars">
+            <li>
+              <span class="pillars__ico"><svg class="ico"><use href="#sprig"/></svg></span>
+              <div>
+                <h3>Rooted in nature</h3>
+                <p>Botanical rituals, plant medicine and natural light shape every practice.</p>
+              </div>
+            </li>
+            <li>
+              <span class="pillars__ico"><svg class="ico"><use href="#sun"/></svg></span>
+              <div>
+                <h3>Softness over striving</h3>
+                <p>No mirrors, no ranking. Just breath, permission, and rest.</p>
+              </div>
+            </li>
+            <li>
+              <span class="pillars__ico"><svg class="ico"><use href="#leaf"/></svg></span>
+              <div>
+                <h3>Held in community</h3>
+                <p>Small circles of eight, so you're always seen and supported.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OFFERINGS ===== -->
+    <section class="offerings" id="offerings" aria-labelledby="off-title">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center"><svg class="ico"><use href="#sprig"/></svg> Ways to practice</span>
+        <h2 id="off-title">Choose the rhythm your body is asking for</h2>
+        <p>Three signature offerings, each a different doorway back to yourself. Prices are per person; sliding-scale places are always available — just ask.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card__media">
+            <img
+              src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?auto=format&fit=crop&w=700&q=80"
+              alt="Soft restorative yoga practice with bolsters and blankets in warm light"
+              width="700" height="520" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <span class="card__tag">Signature</span>
+            <h3>Restore &amp; Root</h3>
+            <p>A 75-minute grounding flow of supported poses, long holds and guided breath. You leave loose, warm and quietly rebuilt.</p>
+            <div class="card__foot">
+              <span class="price">£24<small>/ class</small></span>
+              <a class="btn btn--small" href="#newsletter">Reserve</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--feature reveal">
+          <div class="card__media">
+            <img
+              src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=700&q=80"
+              alt="Group of people practising yoga together in a bright natural studio"
+              width="700" height="520" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <span class="card__tag card__tag--gold">Most loved</span>
+            <h3>The Self-Love Circle</h3>
+            <p>A 6-week evening journey blending restorative yoga, journalling and botanical tea rituals — a small, closed group that grows together.</p>
+            <div class="card__foot">
+              <span class="price">£185<small>/ 6 weeks</small></span>
+              <a class="btn btn--small btn--solid" href="#newsletter">Join the circle</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <img
+              src="https://images.unsplash.com/photo-1591291621164-2c6367723315?auto=format&fit=crop&w=700&q=80"
+              alt="Peaceful one-to-one yoga session outdoors surrounded by greenery"
+              width="700" height="520" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <span class="card__tag">Private</span>
+            <h3>Solstice One-to-One</h3>
+            <p>A bespoke 90-minute private session in the garden studio, shaped entirely around where you are — body, breath and season.</p>
+            <div class="card__foot">
+              <span class="price">£95<small>/ session</small></span>
+              <a class="btn btn--small" href="#newsletter">Enquire</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- organic divider into clay band -->
+    <svg class="divider divider--clay" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,60 C220,10 460,100 720,72 C980,44 1220,4 1440,56 L1440,120 L0,120 Z"/>
+    </svg>
+
+    <!-- ===== TEACHER ===== -->
+    <section class="teacher" id="teacher" aria-labelledby="teach-title">
+      <div class="teacher__grid">
+        <figure class="teacher__media reveal">
+          <div class="teacher__blob" aria-hidden="true"></div>
+          <img
+            src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=760&q=80"
+            alt="Yoga teacher Elowen smiling gently in a warm, plant-filled studio"
+            width="760" height="900" loading="lazy" />
+        </figure>
+
+        <div class="teacher__copy reveal">
+          <span class="eyebrow"><svg class="ico"><use href="#leaf"/></svg> Your guide</span>
+          <h2 id="teach-title">Elowen Hart</h2>
+          <p class="teacher__role">Founder &amp; lead teacher · 500hr RYT</p>
+          <p>Twelve years ago I burned out completely — a knot of ambition with nothing left in the tank. Yoga didn't make me more productive. It made me kinder to the person doing the work. Lumière is the studio I wish I'd found back then.</p>
+          <p>I trained in restorative and yin traditions across Bali and Devon, studied herbalism, and now teach the practice that put me back together: slow, unhurried, and rooted in the belief that you are already enough.</p>
+          <blockquote class="teacher__quote">
+            <span class="teacher__mark" aria-hidden="true">&ldquo;</span>
+            You don't have to earn your rest. Come as you are — we'll take it from there.
+          </blockquote>
+          <p class="teacher__sign">— Elowen</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VOICES / TESTIMONIALS ===== -->
+    <section class="voices" id="voices" aria-labelledby="voices-title">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center"><svg class="ico"><use href="#sun"/></svg> Student voices</span>
+        <h2 id="voices-title">What softening actually feels like</h2>
+      </div>
+
+      <div class="voices__grid">
+        <figure class="quote reveal">
+          <div class="quote__stars" aria-label="Five out of five stars">★★★★★</div>
+          <blockquote>I came to fix my back and left having befriended myself. I've cried, laughed and finally slept properly. Elowen holds a room like no one I've met.</blockquote>
+          <figcaption>
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Portrait of Maya" width="56" height="56" loading="lazy" />
+            <span><strong>Maya R.</strong><small>Self-Love Circle graduate</small></span>
+          </figcaption>
+        </figure>
+
+        <figure class="quote reveal">
+          <div class="quote__stars" aria-label="Five out of five stars">★★★★★</div>
+          <blockquote>The garden studio smells of eucalyptus and rain. For 90 minutes the world went quiet. I book my private session like it's medicine, because it is.</blockquote>
+          <figcaption>
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Portrait of Tom" width="56" height="56" loading="lazy" />
+            <span><strong>Tom E.</strong><small>Solstice One-to-One</small></span>
+          </figcaption>
+        </figure>
+
+        <figure class="quote reveal">
+          <div class="quote__stars" aria-label="Five out of five stars">★★★★★</div>
+          <blockquote>No mirrors, no comparison, no pressure to bend into anything. Just eight of us, some candles and permission to rest. I've never felt more at home in a class.</blockquote>
+          <figcaption>
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=120&q=80" alt="Portrait of Priya" width="56" height="56" loading="lazy" />
+            <span><strong>Priya N.</strong><small>Restore &amp; Root regular</small></span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== NEWSLETTER CTA ===== -->
+    <section class="newsletter" id="newsletter" aria-labelledby="news-title">
+      <div class="newsletter__card reveal">
+        <div class="newsletter__deco" aria-hidden="true">
+          <svg class="ico"><use href="#sprig"/></svg>
+          <svg class="ico"><use href="#leaf"/></svg>
+        </div>
+        <span class="eyebrow eyebrow--center"><svg class="ico"><use href="#leaf"/></svg> The Sunday Letter</span>
+        <h2 id="news-title">A little softness in your inbox each week</h2>
+        <p>Seasonal rituals, a botanical recipe, and one gentle prompt to come back to yourself. No noise, no selling — just a moment of calm every Sunday morning.</p>
+
+        <form class="newsletter__form" action="#" method="post" novalidate>
+          <label class="sr-only" for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+          <button type="submit" class="btn btn--solid">Send me softness</button>
+        </form>
+        <p class="newsletter__fine">Unsubscribe anytime. We treat your inbox like sacred ground.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <svg class="divider divider--footer" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,72 C240,16 480,108 720,80 C960,52 1200,8 1440,64 L1440,0 L0,0 Z"/>
+    </svg>
+
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a class="brand brand--light" href="#top" aria-label="Lumière Yoga home">
+          <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="24" cy="24" r="23" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".5"/>
+            <path d="M24 40c-6-6-9-11-9-16 0-5 3-10 9-14 6 4 9 9 9 14 0 5-3 10-9 16Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+            <path d="M24 14v22M24 22l5-3.5M24 27l-5-3.5M24 32l5-3.5" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+          </svg>
+          <span class="brand__word">Lumière<em>Yoga</em></span>
+        </a>
+        <p>A nature-led studio for slow, self-loving practice. Come home to yourself.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Practice">
+        <h4>Practice</h4>
+        <a href="#offerings">Restore &amp; Root</a>
+        <a href="#offerings">The Self-Love Circle</a>
+        <a href="#offerings">Solstice One-to-One</a>
+        <a href="#philosophy">Our philosophy</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Studio">
+        <h4>Studio</h4>
+        <a href="#teacher">Meet Elowen</a>
+        <a href="#voices">Student voices</a>
+        <a href="#newsletter">The Sunday Letter</a>
+        <a href="mailto:hello@lumiere.yoga">hello@lumiere.yoga</a>
+      </nav>
+
+      <div class="footer__col">
+        <h4>Visit</h4>
+        <p>The Garden Studio<br />14 Willowmead Lane<br />Totnes, Devon TQ9</p>
+        <p>Tue–Sun · by reservation</p>
+      </div>
+    </div>
+
+    <div class="footer__bar">
+      <p>© 2026 Lumière Yoga. Made slowly, with plants.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Journal">Journal</a>
+        <a href="#" aria-label="Contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

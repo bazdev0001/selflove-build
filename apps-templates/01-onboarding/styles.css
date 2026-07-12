@@ -1,0 +1,138 @@
+/* ============================================================
+   LUMIÈRE YOGA — SHARED DESIGN SYSTEM  (define once, reuse)
+   Same tokens/components live at the top of every screen's CSS.
+   ============================================================ */
+:root{
+  /* Palette — calm, warm, self-love */
+  --cream:#F7F1EA;        /* app background */
+  --sand:#EFE5D9;         /* soft panels */
+  --surface:#FFFFFF;      /* cards */
+  --surface-2:#FBF6F0;
+  --ink:#33272B;          /* primary text (warm aubergine-brown) */
+  --ink-soft:#6C5B60;     /* secondary text */
+  --muted:#9A8C8F;        /* tertiary text */
+  --line:#EADFD4;         /* hairlines */
+
+  --plum:#6D4B5C;         /* brand deep */
+  --plum-700:#573B49;
+  --rose:#C48A82;         /* brand accent */
+  --rose-200:#F0D8D2;
+  --terracotta:#C6765A;
+  --sage:#8FA68E;
+  --sage-200:#DDE6DA;
+  --gold:#C9A24B;
+  --gold-200:#F0E1BE;
+
+  --grad-brand:linear-gradient(135deg,#7C5266 0%,#B4788A 55%,#C48A82 100%);
+  --grad-warm:linear-gradient(160deg,#F6D9A8 0%,#E4A98C 60%,#C48A82 100%);
+
+  /* Type */
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+
+  /* Radii + shadows */
+  --r-lg:26px; --r-md:20px; --r-sm:14px; --r-pill:999px;
+  --shadow-card:0 10px 30px -14px rgba(74,48,60,.28);
+  --shadow-float:0 18px 44px -16px rgba(74,48,60,.42);
+  --shadow-btn:0 14px 26px -10px rgba(109,75,92,.55);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:var(--sans);
+  color:var(--ink);
+  background:
+    radial-gradient(120% 90% at 20% 0%,#F4E7DD 0%,transparent 55%),
+    radial-gradient(120% 90% at 100% 100%,#EADCE0 0%,transparent 50%),
+    #E9DED4;
+  -webkit-font-smoothing:antialiased;
+  display:flex;min-height:100vh;
+}
+
+/* ---- Stage + device frame ---- */
+.stage{margin:auto;padding:40px 20px;display:flex;justify-content:center;width:100%}
+.phone{
+  position:relative;width:390px;height:844px;flex:0 0 auto;
+  background:linear-gradient(160deg,#2b2226,#443139);
+  border-radius:56px;padding:13px;
+  box-shadow:
+    0 2px 0 1px rgba(255,255,255,.14) inset,
+    0 -2px 0 1px rgba(0,0,0,.35) inset,
+    var(--shadow-float),0 60px 120px -40px rgba(58,38,48,.6);
+}
+.bezel-glare{
+  position:absolute;inset:0;border-radius:56px;pointer-events:none;
+  background:linear-gradient(125deg,rgba(255,255,255,.14) 0%,transparent 22%,transparent 78%,rgba(255,255,255,.06) 100%);
+}
+.screen{
+  position:relative;width:100%;height:100%;overflow:hidden;
+  border-radius:44px;background:var(--cream);
+  display:flex;flex-direction:column;
+}
+
+/* ---- Status bar ---- */
+.statusbar{
+  position:relative;z-index:6;display:flex;align-items:center;justify-content:space-between;
+  padding:14px 30px 6px;color:var(--ink);
+}
+.clock{font-weight:700;font-size:15px;letter-spacing:.3px}
+.dynamic-island{
+  position:absolute;left:50%;top:12px;transform:translateX(-50%);
+  width:112px;height:32px;background:#1c1418;border-radius:20px;
+}
+.sysicons{display:flex;align-items:center;gap:7px;fill:var(--ink)}
+.battery{position:relative;display:inline-block;width:24px;height:12px;border:1.5px solid var(--ink);border-radius:4px;opacity:.9}
+.battery::after{content:"";position:absolute;right:-3px;top:3px;width:2px;height:6px;background:var(--ink);border-radius:0 2px 2px 0}
+.battery-fill{position:absolute;left:1.5px;top:1.5px;bottom:1.5px;width:70%;background:var(--ink);border-radius:2px}
+
+/* ---- Buttons (shared) ---- */
+.btn-primary{
+  width:100%;border:0;cursor:pointer;font-family:var(--sans);
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  padding:17px 22px;border-radius:var(--r-pill);
+  background:var(--grad-brand);color:#fff;font-weight:700;font-size:16px;
+  box-shadow:var(--shadow-btn);
+  transition:transform .18s ease,box-shadow .18s ease,filter .18s ease;
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 20px 34px -10px rgba(109,75,92,.62)}
+.btn-primary:active{transform:translateY(0) scale(.99)}
+
+/* Home indicator */
+.home-indicator{width:132px;height:5px;border-radius:3px;background:rgba(51,39,43,.28);margin:14px auto 8px}
+
+/* ============================================================
+   SCREEN 01 — ONBOARDING
+   ============================================================ */
+.hero{position:relative;height:352px;flex:0 0 auto;margin-top:-4px}
+.hero-art{width:100%;height:100%;display:block}
+.hero-fade{position:absolute;left:0;right:0;bottom:0;height:120px;
+  background:linear-gradient(to bottom,transparent,var(--cream) 92%)}
+
+.intro{padding:6px 30px 0;flex:1 1 auto;display:flex;flex-direction:column}
+.eyebrow{font-weight:700;font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--rose)}
+.display{
+  font-family:var(--serif);font-weight:500;font-size:41px;line-height:1.02;
+  letter-spacing:-.5px;margin-top:8px;color:var(--ink);
+}
+.display em{font-style:italic;color:var(--plum)}
+.lede{margin-top:12px;font-size:14.5px;line-height:1.5;color:var(--ink-soft);max-width:31ch}
+
+.valueprops{list-style:none;margin-top:18px;display:flex;flex-direction:column;gap:12px}
+.valueprops li{display:flex;align-items:center;gap:13px}
+.vp-ico{
+  flex:0 0 auto;width:42px;height:42px;border-radius:13px;display:grid;place-items:center;
+  background:color-mix(in srgb,var(--c) 18%,#fff);color:var(--c);
+  box-shadow:0 6px 14px -8px color-mix(in srgb,var(--c) 70%,transparent);
+}
+.vp-ico svg{fill:currentColor}
+.vp-txt{display:flex;flex-direction:column;font-size:13.5px;color:var(--ink-soft);line-height:1.3}
+.vp-txt b{color:var(--ink);font-weight:700;font-size:14.5px}
+
+.cta-block{padding:14px 30px 4px;flex:0 0 auto}
+.dots{display:flex;gap:7px;justify-content:center;margin-bottom:15px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--line);transition:width .3s}
+.dot.active{width:22px;border-radius:4px;background:var(--plum)}
+.signin{text-align:center;margin-top:13px;font-size:13.5px;color:var(--ink-soft)}
+.signin a{color:var(--plum);font-weight:700;text-decoration:none}
+.signin a:hover{text-decoration:underline}

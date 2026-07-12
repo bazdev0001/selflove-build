@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumière Yoga — Template Gallery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#1a1a1a;--paper:#f7f4ef;--muted:#6b665e;--accent:#b5643c;--line:#e2ddd4}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.5}
+  header{padding:clamp(3rem,8vw,7rem) clamp(1.5rem,5vw,5rem) clamp(2rem,4vw,3.5rem);border-bottom:1px solid var(--line)}
+  .kicker{font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:1.2rem}
+  h1{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(2.4rem,6vw,4.5rem);line-height:1.02;letter-spacing:-.02em;max-width:16ch}
+  .sub{margin-top:1.5rem;color:var(--muted);max-width:60ch;font-size:clamp(1rem,1.6vw,1.15rem)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:clamp(1rem,2.5vw,2rem);padding:clamp(2rem,5vw,4rem) clamp(1.5rem,5vw,5rem)}
+  .card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;text-decoration:none;color:inherit;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s}
+  .card:hover{transform:translateY(-6px);box-shadow:0 22px 50px -24px rgba(0,0,0,.35)}
+  .swatch{height:150px;display:flex;align-items:flex-end;padding:1.1rem 1.3rem;font-family:'Fraunces',serif;font-size:1.15rem;color:#fff;position:relative}
+  .num{position:absolute;top:1rem;right:1.2rem;font-family:'Inter';font-size:.8rem;opacity:.8;letter-spacing:.1em}
+  .body{padding:1.2rem 1.3rem 1.5rem}
+  .style{font-family:'Fraunces',serif;font-size:1.35rem;margin-bottom:.4rem}
+  .desc{color:var(--muted);font-size:.92rem}
+  .view{margin-top:1rem;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600}
+  footer{padding:2rem clamp(1.5rem,5vw,5rem) 4rem;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+  footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header>
+  <div class="kicker">Lumière Yoga · Design System Showcase</div>
+  <h1>Ten template styles, one brand.</h1>
+  <p class="sub">Ten distinct high-end website directions plus a premium mobile app set — each hand-built, fully responsive, and framework-free. Click any card to open the live template.</p>
+</header>
+<main class="grid">
+  <a class="card" href="01-editorial-luxury/index.html"><div class="swatch" style="background:#e8e2d6;color:#1a1a1a"><span class="num">01</span>Editorial Luxury</div><div class="body"><div class="style">Editorial Luxury</div><div class="desc">Serif minimalism, whitespace, muted palette — Aesop / Kinfolk energy.</div><div class="view">Open →</div></div></a>
+  <a class="card" href="02-organic-botanical/index.html"><div class="swatch" style="background:#7c8a5e"><span class="num">02</span>Organic Botanical</div><div class="body"><div class="style">Organic Botanical</div><div class="desc">Sage & terracotta, organic blobs, botanical SVG — warm wellness.</div><div class="view">Open →</div></div></a>
+  <a class="card" href="03-dark-elegant-gold/index.html"><div class="swatch" style="background:#1c1a17;color:#d4af6a"><span class="num">03</span>Dark Elegant Gold</div><div class="body"><div class="style">Dark Elegant · Gold</div><div class="desc">Cinematic charcoal + champagne — luxury retreat aesthetic.</div><div class="view">Open →</div></div></a>
+  <a class="card" href="04-swiss-typographic/index.html"><div class="swatch" style="background:#e5322b"><span class="num">04</span>Swiss Typographic</div><div class="body"><div class="style">Swiss Typographic</div><div class="desc">Strict modular grid, bold sans, red/black — design-studio grade.</div><div class="view">Open →</div></div></a>
+  <a class="card" href="05-soft-glass-pastel/index.html"><div class="swatch" style="background:linear-gradient(135deg,#f8c8dc,#c8b6f0,#b6d8f0)"><span class="num">05</span>Soft Glass Pastel</div><div class="body"><div class="style">Soft Glass · Pastel</div><div class="desc">Dreamy gradients, frosted glass, floating motion — serene & modern.</div><div class="view">Open →</div></div></a>
+  <a class="card" href="06-zen-japanese/index.html"><div class="swatch" style="background:#efece4;color:#2b2622"><span class="num">06</span>Zen Japanese</div><div class="body"><div class="style">Zen · Japanese Ma</div><div class="desc">Vast whitespace, washi tones, sumi-ink accent, self-drawing enso.</div><div class="view">Open →</div></div></a>
+  <a class="card" href="07-retro-warm-70s/index.html"><div class="swatch" style="background:#c9702d"><span class="num">07</span>Retro Warm 70s</div><div class="body"><div class="style">Retro Warm · 70s</div><div class="desc">Mustard & rust, arch shapes, film grain — modern retro soul.</div><div class="view">Open →</div></div></a>
+  <a class="card" href="08-cinematic-fullbleed/index.html"><div class="swatch" style="background:#2a3540;color:#fff"><span class="num">08</span>Cinematic Full-Bleed</div><div class="body"><div class="style">Cinematic Full-Bleed</div><div class="desc">Edge-to-edge imagery, parallax, dramatic overlays — luxury travel feel.</div><div class="view">Open →</div></div></a>
+  <a class="card" href="09-neo-brutalist/index.html"><div class="swatch" style="background:#f5f1e8;color:#161616;border-bottom:3px solid #161616"><span class="num">09</span>Neo-Brutalist</div><div class="body"><div class="style">Neo-Brutalist</div><div class="desc">Exposed borders, hard shadows, one punchy accent — refined edge.</div><div class="view">Open →</div></div></a>
+  <a class="card" href="10-colorblock-contemporary/index.html"><div class="swatch" style="background:#ff6b35"><span class="num">10</span>Color-Block</div><div class="body"><div class="style">Bold Color-Block</div><div class="desc">Saturated blocking, geometric sans — energetic DTC-wellness premium.</div><div class="view">Open →</div></div></a>
+  <a class="card" href="../apps-templates/01-onboarding/index.html"><div class="swatch" style="background:#6a4a6e;color:#fff"><span class="num">APP</span>Mobile App Set</div><div class="body"><div class="style">App Templates ×4</div><div class="desc">Onboarding · booking · meditation player · progress dashboard — one design system.</div><div class="view">Open →</div></div></a>
+</main>
+<footer>10 website styles + a 4-screen app set · hand-built by the fleet on Fable 5 · preview any folder with <code>python3 -m http.server</code>. Images are Unsplash CDN placeholders — swap for owned assets before production.</footer>
+</body>
+</html>

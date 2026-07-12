@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lumière Yoga — Your Progress</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<main class="stage">
+  <div class="phone">
+    <div class="bezel-glare"></div>
+    <div class="screen">
+      <div class="statusbar">
+        <span class="clock">9:41</span>
+        <div class="dynamic-island"></div>
+        <div class="sysicons">
+          <svg viewBox="0 0 18 12" width="18" height="12" aria-hidden="true"><rect x="0" y="7" width="3" height="5" rx="1"/><rect x="5" y="4.5" width="3" height="7.5" rx="1"/><rect x="10" y="2" width="3" height="10" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1" opacity=".35"/></svg>
+          <svg viewBox="0 0 16 12" width="16" height="12" aria-hidden="true"><path d="M8 2.6c2 0 3.9.8 5.3 2.1l1.2-1.3A9.2 9.2 0 0 0 8 .8 9.2 9.2 0 0 0 1.5 3.4l1.2 1.3A7.4 7.4 0 0 1 8 2.6Zm0 3.4c1 0 2 .4 2.8 1.1l1.2-1.3A6 6 0 0 0 8 4a6 6 0 0 0-4 1.8l1.2 1.3A4.1 4.1 0 0 1 8 6Zm0 3.3L9.8 8A2.6 2.6 0 0 0 8 7.3 2.6 2.6 0 0 0 6.2 8L8 9.3Z"/></svg>
+          <span class="battery"><span class="battery-fill"></span></span>
+        </div>
+      </div>
+
+      <div class="scroll">
+        <header class="dash-head">
+          <div>
+            <p class="hi">Your journey</p>
+            <h1 class="page-title">Hello, <em>Amara</em></h1>
+          </div>
+          <button class="icon-round" aria-label="Settings">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </header>
+
+        <!-- streak banner -->
+        <div class="streak">
+          <div class="streak-flame">
+            <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M12 2c1 3 4 4 4 8a4 4 0 0 1-8 0c0-1 .3-1.8.8-2.5C9 8 12 6 12 2Z" fill="#F6D9A8"/><path d="M12 22a5 5 0 0 0 5-5c0-3-3-4-3-7-2 2-2 3-2.5 4C10 12 9 13 9 15a3 3 0 0 0 3 7Z" fill="#E4A98C"/></svg>
+          </div>
+          <div class="streak-txt">
+            <p class="streak-num">18 <span>day streak</span></p>
+            <p class="streak-sub">Your longest yet — keep the flame lit ✨</p>
+          </div>
+          <div class="streak-mini">
+            <span class="sm on">M</span><span class="sm on">T</span><span class="sm on">W</span><span class="sm on">T</span><span class="sm on">F</span><span class="sm on">S</span><span class="sm today">S</span>
+          </div>
+        </div>
+
+        <!-- stat cards -->
+        <div class="stat-grid">
+          <div class="stat-card">
+            <span class="stat-ico" style="--c:var(--plum)">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <p class="stat-num">1,240</p>
+            <p class="stat-lbl">Minutes meditated</p>
+            <p class="stat-delta up">▲ 12% this month</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-ico" style="--c:var(--sage)">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3c3 3 3 6 0 9-3-3-3-6 0-9Zm0 18v-7M6 9c3 1 4 4 3 7-3-1-4-4-3-7Zm12 0c-3 1-4 4-3 7 3-1 4-4 3-7Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            </span>
+            <p class="stat-num">86</p>
+            <p class="stat-lbl">Sessions completed</p>
+            <p class="stat-delta up">▲ 9 this week</p>
+          </div>
+        </div>
+
+        <!-- weekly rings + chart -->
+        <div class="panel">
+          <div class="panel-head">
+            <h3>This week</h3>
+            <span class="panel-goal">Goal · 150 min</span>
+          </div>
+          <div class="week-row">
+            <!-- activity rings -->
+            <svg class="rings" viewBox="0 0 120 120" width="120" height="120" aria-label="Weekly goal 82 percent complete">
+              <defs>
+                <linearGradient id="ring1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#C48A82"/><stop offset="100%" stop-color="#B4788A"/></linearGradient>
+                <linearGradient id="ring2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#8FA68E"/><stop offset="100%" stop-color="#A9C0A6"/></linearGradient>
+                <linearGradient id="ring3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#C9A24B"/><stop offset="100%" stop-color="#E4C77A"/></linearGradient>
+              </defs>
+              <g transform="rotate(-90 60 60)" fill="none" stroke-linecap="round">
+                <circle cx="60" cy="60" r="50" stroke="#F0E6DA" stroke-width="11"/>
+                <circle cx="60" cy="60" r="50" stroke="url(#ring1)" stroke-width="11" stroke-dasharray="314" stroke-dashoffset="57"/>
+                <circle cx="60" cy="60" r="37" stroke="#F0E6DA" stroke-width="11"/>
+                <circle cx="60" cy="60" r="37" stroke="url(#ring2)" stroke-width="11" stroke-dasharray="232" stroke-dashoffset="46"/>
+                <circle cx="60" cy="60" r="24" stroke="#F0E6DA" stroke-width="11"/>
+                <circle cx="60" cy="60" r="24" stroke="url(#ring3)" stroke-width="11" stroke-dasharray="151" stroke-dashoffset="18"/>
+              </g>
+              <text x="60" y="56" text-anchor="middle" font-family="Fraunces,serif" font-size="26" font-weight="600" fill="#33272B">82%</text>
+              <text x="60" y="72" text-anchor="middle" font-family="Manrope,sans-serif" font-size="9" font-weight="700" fill="#9A8C8F" letter-spacing=".5">OF GOAL</text>
+            </svg>
+            <ul class="ring-legend">
+              <li><span class="lg-dot" style="background:var(--rose)"></span><b>Mind</b> 123 / 150 min</li>
+              <li><span class="lg-dot" style="background:var(--sage)"></span><b>Move</b> 4 / 5 flows</li>
+              <li><span class="lg-dot" style="background:var(--gold)"></span><b>Breath</b> 6 / 7 days</li>
+            </ul>
+          </div>
+
+          <!-- bar chart -->
+          <div class="chart">
+            <svg viewBox="0 0 300 130" width="100%" height="130" preserveAspectRatio="none" aria-label="Daily minutes for the past week">
+              <defs>
+                <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#B4788A"/><stop offset="100%" stop-color="#C48A82"/></linearGradient>
+                <linearGradient id="barToday" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#E4A98C"/><stop offset="100%" stop-color="#C9A24B"/></linearGradient>
+              </defs>
+              <!-- gridlines -->
+              <g stroke="#EEE3D6" stroke-width="1"><line x1="0" y1="30" x2="300" y2="30"/><line x1="0" y1="65" x2="300" y2="65"/><line x1="0" y1="100" x2="300" y2="100"/></g>
+              <!-- bars: 7 days, x centres 21..279 -->
+              <g>
+                <rect x="10"  y="58" width="22" height="42" rx="8" fill="url(#bar)"/>
+                <rect x="52"  y="40" width="22" height="60" rx="8" fill="url(#bar)"/>
+                <rect x="94"  y="72" width="22" height="28" rx="8" fill="url(#bar)"/>
+                <rect x="136" y="34" width="22" height="66" rx="8" fill="url(#bar)"/>
+                <rect x="178" y="52" width="22" height="48" rx="8" fill="url(#bar)"/>
+                <rect x="220" y="20" width="22" height="80" rx="8" fill="url(#bar)"/>
+                <rect x="262" y="46" width="22" height="54" rx="8" fill="url(#barToday)"/>
+              </g>
+            </svg>
+            <div class="chart-x"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span class="cx-today">S</span></div>
+          </div>
+        </div>
+
+        <!-- recent sessions -->
+        <div class="section-head">
+          <h3>Recent sessions</h3>
+          <a href="#" class="see-all">History</a>
+        </div>
+        <ul class="recent">
+          <li>
+            <span class="rec-ico" style="--from:#E4A98C;--to:#C48A82">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3c3 3 3 6 0 9-3-3-3-6 0-9Zm0 18v-7M6 9c3 1 4 4 3 7-3-1-4-4-3-7Zm12 0c-3 1-4 4-3 7 3-1 4-4 3-7Z" fill="#fff"/></svg>
+            </span>
+            <div class="rec-body"><p class="rec-title">Sunrise Slow Flow</p><p class="rec-sub">Today · 7:32 AM · Priya Nair</p></div>
+            <span class="rec-min">30<small>m</small></span>
+          </li>
+          <li>
+            <span class="rec-ico" style="--from:#8E6E8E;--to:#6D4B5C">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14a8 8 0 1 1-9.4-7.9A6.5 6.5 0 0 0 20 14Z" fill="#fff"/></svg>
+            </span>
+            <div class="rec-body"><p class="rec-title">Letting Go of the Day</p><p class="rec-sub">Yesterday · 9:48 PM · Maya Lindqvist</p></div>
+            <span class="rec-min">21<small>m</small></span>
+          </li>
+          <li>
+            <span class="rec-ico" style="--from:#A9C0A6;--to:#7E9A7C">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4c4 4 4 8 0 12-4-4-4-8 0-12Zm-6 6c4 1 5 5 4 9-4-1-5-5-4-9Zm12 0c-4 1-5 5-4 9 4-1 5-5 4-9Z" fill="#fff"/></svg>
+            </span>
+            <div class="rec-body"><p class="rec-title">Midday Reset · Yin</p><p class="rec-sub">Mon · 12:20 PM · Elena Fischer</p></div>
+            <span class="rec-min">50<small>m</small></span>
+          </li>
+        </ul>
+
+        <div class="quote">
+          <p>“You are allowed to move slowly. You are still moving.”</p>
+        </div>
+      </div>
+
+      <nav class="tabbar">
+        <button class="tab"><svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><path d="M4 11l8-7 8 7v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1Z"/></svg></button>
+        <button class="tab"><svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 9h16M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+        <button class="tab active"><svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <button class="tab"><svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 20c1-4 4-6 7-6s6 2 7 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+      </nav>
+      <div class="home-indicator"></div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
