@@ -1,0 +1,6 @@
+appId: com.apex.selflovebuild
+---
+- launchApp
+- assertVisible: "Lumière"
+- tapOn: "Sign In"
+- assertVisible: "Email"
